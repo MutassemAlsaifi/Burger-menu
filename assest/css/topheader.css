@@ -1,0 +1,8 @@
+header.top_header {
+  min-height: 6vh;
+  background-color: var(--main);
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  color: var(--main_text);
+}

@@ -1,0 +1,112 @@
+header.main_header {
+  padding: 1rem 0;
+  background-color: var(--main_text_opacity50);
+  backdrop-filter: blur(10px);
+}
+header.main_header img{
+  width: 30px;
+
+}
+header.main_header nav {
+  display: flex;
+  gap: 5rem;
+  transition: 1s;
+}
+header.main_header .links_div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: end;
+}
+header.main_header .links_div a {
+  width: 100%;
+}
+header.main_header .links_div .cart {
+  margin-left: 5rem;
+  background-color: var(--main);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-image: url(../img/pattern.svg);
+  cursor: pointer;
+position: relative;
+}
+header.main_header .links_div .cart span{
+  position: absolute;
+  background-color: var(--main_text);
+  color: var(--main);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.247));
+  width: 4rem;
+  height: 4rem;
+display: grid;
+place-items: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  top: -30%;
+  right:  -50%;
+}
+header.main_header .links_div .cart svg {
+  font-size: 1.5rem;
+  color: var(--main_text);
+}
+header.main_header .links_div nav a.active {
+  color: var(--main);
+}
+header.main_header .links_div nav a:not(.active):hover {
+  color: var(--main_opacity50);
+}
+.bar_icon {
+  cursor: pointer;
+}
+.bar_icon svg {
+  color: var(--main);
+  font-size: 2rem;
+}
+header.main_header button{
+  background-color: transparent;
+}
+header.main_header .bar svg{
+ color: var(--main);
+ font-size: 2.3rem;
+}
+@media screen and (max-width:992px) {
+  
+  header.main_header .links_div .links {
+    display: grid !important;
+    gap: 2rem !important;
+    place-content: center;
+    align-items: center;
+    line-height: 10vh;
+    padding: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    background-color: var(--main);
+    gap: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 1s;
+    z-index: 99;
+    padding: 0 2rem;
+
+
+}
+header.main_header .links_div .links.active_bar{
+    height:  50vh;
+    opacity: 1 ;
+}
+header.main_header .links_div a{
+    width: 100vw;
+    text-align: center;
+    height: 10vh;
+    background-color: var(--main_text) ;
+    border-radius: 5rem;
+    padding: 0 2rem;
+
+}
+header.main_header .links_div .links 
+  a:hover{
+  opacity: 0.7;
+  }
+}

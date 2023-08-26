@@ -1,0 +1,103 @@
+/* IMPORT THE STYLES */
+@import url(topheader.css);
+@import url(mainheder.css);
+@import url(main.css);
+@import url(products.css);
+@import url(how_works.css);
+@import url(menu.css);
+@import url(order_online.css);
+@import url(picture_section.css);
+@import url(support.css);
+@import url(footer.css);
+@import url(cart.css);
+/* IMPORT THE FONTS */
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../fonts/Inter/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(../fonts/Inter/static/Inter-Bold.ttf);
+}
+/* RESET THE ELEMENTS  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter-Regular";
+  scroll-behavior: smooth;
+}
+
+/* GLOBAL SCOPE FOR ALL ELEMENTS  */
+:root {
+  font-size: 10px;
+  --main: #35b8be;
+  --main_opacity50: #35b8be80;
+  --main_text: #fff;
+  --main_text_opacity50: #ffffff80;
+  --sec_text: #546285;
+  --bg: #f5fbfc;
+  --box_border: rgb(0, 0, 0, 0.3);
+  --dark: #000;
+  --light_main: #f5fbfc;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+button {
+  color: inherit;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  outline: transparent;
+  border: transparent;
+  cursor: pointer;
+  display: block;
+}
+span {
+  color: var(--main);
+}
+input {
+  outline: transparent;
+  border: transparent;
+}
+.btn{
+  padding: 2rem 4rem !important;
+  border-radius: 0.5rem !important;
+  background-color: var(--main) !important;
+  background-image: url(../img/pattern.svg) !important;
+margin-top: 3rem !important;
+color: var(--main_text) !important;
+border: 1px solid var(--main) !important;
+}
+.btn:hover{
+background-color: transparent !important;
+color: #35b8be !important;
+}
+
+/* THIS CLASSES FOR JS  */
+
+@keyframes transformY {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 300px;
+  }
+}
+.close_nav {
+  animation: close 0.5s ease-in-out forwards;
+}
+@keyframes close {
+  0% {
+    height: 300px;
+    transform: scale(1);
+  }
+  100% {
+    height: -100px;
+    transform: scale(0);
+  }
+}

@@ -1,0 +1,102 @@
+.menu {
+  padding: 5rem 0;
+}
+.menu .container-fluid {
+  background-color: var(--bg);
+  padding: 2rem 0;
+}
+.menu .header_content {
+  text-align: center;
+}
+
+.menu .container .row {
+  margin: 2.5rem 0;
+}
+.menu .container .row .child {
+  margin: 2.5rem 0;
+}
+.menu .header_content h2 {
+  font-size: 5.5rem;
+}
+.menu .header_content p {
+  font-size: 1.8rem;
+}
+.menu .buttons {
+  margin-top: 5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+.menu .buttons button {
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px var(--box_border);
+  color: var(--dark);
+}
+.menu .buttons .active {
+  background-color: var(--main);
+  background-image: url(../img/pattern.svg);
+  color: var(--main_text);
+}
+.menu .container .row .card {
+  padding: 2rem;
+  background-color: var(--main_text);
+  border-radius: 1rem;
+  box-shadow: 0 0 5px var(--box_border);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.menu .container .row .card h3 {
+  font-size: 2.2rem;
+  font-family: "Inter-Bold";
+}
+
+.menu .container .row .card p {
+  font-size: 1.8rem;
+  color: var(--sec_text);
+}
+.menu .container .row .card .header_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.menu .container .row .card .header_card span {
+  font-size: 1.5rem;
+}
+.menu .container .row .card .footer_card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+.menu .container .row .card .footer_card input {
+  width: 6rem;
+  padding: 2rem 0.5rem;
+  border: solid 1px var(--box_border);
+  border-radius: 0.4rem;
+  font-family: "Inter-Bold";
+  font-size: 1.5rem;
+}
+.menu .container .row .card .footer_card button {
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  color: var(--main_text);
+  background-color: var(--main);
+  box-shadow: 0 0 2px var(--box_border);
+}
+.menu button.seeMenu {
+  background-color: var(--main);
+  background-image: url(../img/pattern.svg);
+  color: var(--main_text);
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  margin: auto;
+}
+.menu img {
+  width: 50%;
+}

@@ -1,0 +1,152 @@
+/* تنسيق السلة */
+.close_cart{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.269);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+#cart {
+    padding: 0.5rem 3rem;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(72, 69, 69);
+    font-family: "Inter-Bold";
+    transform: translateX(-100%);
+  }
+#cart h3{
+text-align: center;
+transform: translateY(3rem);
+font-family: "Inter-Bold";
+font-size: 3rem;
+color: var(--main);
+  }
+  .headerCart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr  1fr 0.5fr;
+    transform: translateY(5rem);
+    justify-items: center;
+    margin-top: 2rem;
+  }
+  .bodyCart{
+    width: 100%;
+    transform: translateY(8rem);
+    height:60vh;
+    display: grid;
+    align-content: start;
+    gap: 3rem;
+    overflow-y: scroll;
+
+  }.bodyCart::-webkit-scrollbar-thumb{
+    background-color: var(--main);
+  }
+  .bodyCart::-webkit-scrollbar-track{
+    background-color: black;
+  }
+  .bodyCart::-webkit-scrollbar{
+width:5px;
+}
+.footerCart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(10rem);
+font-size: 2rem;
+}
+.footerCart .btn{
+  margin-top: 0 !important;
+}
+  .cancel_add{
+    padding: 1rem 2rem ;
+    border-radius: 3rem;
+    
+  }
+  .bodyCart #cart-items{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr  1fr 0.4fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .cancel_item{
+    font-size:1.5rem;
+    cursor: pointer;
+  }
+  .bodyCart img {
+    width: 70px;
+    height:  70px;
+    border-radius: 50%;
+  }
+  
+ 
+  .cart-total{
+    background-color: aliceblue;
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+  }
+  #cart-items li {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  
+
+.relative{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cancel{
+    top: 2rem;
+    right: 1rem;
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.transform{
+    animation: transform 1s both;
+}
+.transform_reverse{
+    animation: transform_reverse 1s both;
+
+}
+  @keyframes transform {
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(0);
+    }
+  }
+  @keyframes transform_reverse {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+  }
+  /* انميشن عند دخول السلة */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width:992px) {
+    #cart {
+width: 100%;
+    }
+    #cart img {
+      width: 40px;
+      height:  40px;
+    }
+  }

@@ -1,0 +1,27 @@
+section.picture_section {
+  padding: 5rem 0;
+  background-image: url(../img/sec2/sec2_bg-text.svg);
+  background-repeat: no-repeat;
+  background-position: 150px;
+  background-color: var(--bg);
+}
+section.picture_section .container .img {
+  width: 40%;
+  margin-left: auto;
+}
+section.picture_section .container .img img {
+  width: 100%;
+}
+
+/* FOR RESPONSIVE  */
+@media screen and (max-width: 992px) {
+  section.picture_section {
+    background: none;
+  }
+  section.picture_section .container .img {
+    width: 100%;
+  }
+  section.picture_section .container .img {
+    margin: auto;
+  }
+}

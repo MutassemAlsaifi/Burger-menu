@@ -1,0 +1,40 @@
+section.support {
+  padding: 5rem 0;
+}
+
+section.support img {
+  width: 100%;
+}
+
+section.support .special {
+  display: grid;
+  align-items: center;
+  background-color: var(--main);
+  background-image: url(../img/sec7/sec7_pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 550px;
+  padding: 0 3rem;
+}
+section.support .special h2 {
+  font-size: 5.5rem;
+  font-family: "Inter-Bold";
+  color: var(--main_text);
+}
+section.support .special span {
+  color: #1b9097;
+}
+section.support .container .row .child button {
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  color: var(--main);
+  background-color: var(--main_text);
+  border: 1px solid var(--main_text) ;
+}
+
+section.support .container .row .child button:hover{
+  background-color: var(--main) ;
+  background-image: url(../img/pattern.svg) ;
+color: var(--main) ;
+color: var(--main_text);
+}

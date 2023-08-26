@@ -1,0 +1,45 @@
+section.order_online {
+  padding: 5rem 0;
+}
+
+section.order_online .row .left_content .text_content {
+  display: grid;
+  gap: 3rem;
+  justify-items: start;
+}
+section.order_online .row .left_content h2 {
+  font-size: 6rem;
+  font-family: "Inter-Bold";
+}
+section.order_online .row .left_content p {
+  color: var(--sec_text);
+  font-size: 1.8rem;
+}
+section.order_online .row .left_content .text_content button {
+  background-color: var(--main);
+  background-image: url(../img/pattern.svg);
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  color: var(--main_text);
+}
+section.order_online .child img {
+  width: 100%;
+}
+section.order_online img {
+  width: 100%;
+}
+/* FOR RESPONSIVE  */
+@media (max-width: 992px) {
+  section.order_online .row .left_content .text_content {
+    text-align: center;
+  }
+  section.order_online .row .left_content p {
+    text-align: justify;
+  }
+  section.order_online .row .left_content button {
+    margin: auto;
+  }
+  section.order_online {
+    background-image: none;
+  }
+}

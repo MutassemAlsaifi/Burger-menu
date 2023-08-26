@@ -1,0 +1,46 @@
+main {
+  padding: 5rem 0;
+}
+main .row .left_content {
+  background-image: url(../img/sec1/hero_bgi.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+main img {
+  width: 100%;
+}
+main .row .left_content .text_content {
+  display: grid;
+  gap: 3rem;
+  justify-items: start;
+}
+main .row .left_content h1 {
+  font-size: 6rem;
+  font-family: "Inter-Bold";
+}
+main .row .left_content p {
+  color: var(--sec_text);
+  font-size: 1.8rem;
+}
+main .row .left_content .text_content button {
+  background-color: var(--main);
+  background-image: url(../img/pattern.svg);
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  color: var(--main_text);
+}
+main .row .left_content .text_content .footer_main svg {
+  color: var(--main);
+  font-size: 2rem;
+}
+main .row .left_content .text_content .footer_main b {
+  font-size: 1.8rem;
+  font-family: "Inter-Bold";
+}
+main .row .left_content .text_content .footer_main p {
+  font-size: 1.6rem;
+}
+main .child img {
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+section.how_works {
+  padding: 5rem 0;
+}
+.how_works .container h2 {
+  font-family: "Inter-Bold";
+  font-size: 5.5rem;
+  text-align: center;
+}
+.how_works .container .row {
+  margin-top: 5rem;
+  text-align: center;
+}
+.how_works .container .row .card {
+  margin: 2rem 0;
+}
+.how_works .container .row .child h3 {
+  font-size: 2.2rem;
+  font-family: "Inter-Bold";
+}
+.how_works .container .row .child p {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--sec_text);
+}
+.how_works img {
+  width: 70%;
+}
