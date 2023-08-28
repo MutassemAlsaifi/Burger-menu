@@ -44,4 +44,3 @@ Create a pull request to the main branch of this repository.
 License
 This project is licensed under the MIT License, allowing you to freely use and distribute the code. Attribution is appreciated but not required.
 
-Dive into the code, explore the Front-End Burger Menu, and enjoy experimenting with modern front-end techniques! If you have any questions or suggestions, feel free to open an issue. Happy coding!
